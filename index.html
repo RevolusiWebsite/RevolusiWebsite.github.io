@@ -19,301 +19,107 @@
             font-family: 'Inter', sans-serif;
             scroll-behavior: smooth;
         }
-
         /* Gradient for CTA buttons */
         .cta-gradient {
-            background: linear-gradient(90deg, #F97316, #EF4444); /* Orange-Red Gradient */
+            background: linear-gradient(90deg, #f59e0b, #ef4444);
         }
         .cta-gradient:hover {
-            background: linear-gradient(90deg, #EF4444, #F97316);
+            background: linear-gradient(90deg, #ef4444, #f59e0b);
         }
-
-        /* Pulse animation for CTA buttons */
         .pulse-animation {
             animation: pulse 2s infinite;
         }
         @keyframes pulse {
             0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
-            70% { transform: scale(1.05); box-shadow: 0 0 0 20px rgba(239, 68, 68, 0); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
             100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
-        }
-
-        /* Custom glow effect for the image */
-        .image-glow {
-            box-shadow: 0 0 50px -12px rgba(239, 68, 68, 0.5);
         }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- Sticky Navigation Bar -->
-    <nav class="bg-white sticky top-0 z-50 shadow-md">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- HERO SECTION -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
             <h2 class="text-2xl font-bold text-gray-900">RevolusiWebsite.id</h2>
-            <a href="#harga" class="hidden md:block cta-gradient text-white font-bold py-2 px-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
-                Amankan Slot!
-            </a>
         </div>
-    </nav>
+    </header>
 
     <main>
-        <!-- HERO SECTION (Attention) -->
+        <!-- HERO CONTENT -->
         <section class="py-16 md:py-24 bg-white">
             <div class="container mx-auto px-6 text-center">
-                <div class="max-w-5xl mx-auto">
-                    <!-- Urgency Badge -->
-                    <div class="bg-red-600 text-white font-bold py-3 px-6 rounded-full inline-block mb-6 shadow-lg transform rotate-[-3deg]">
-                        <p class="text-lg">⚡ HANYA UNTUK 100 ORANG PERTAMA! ⚡</p>
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-red-600 text-white font-bold py-2 px-4 rounded-full inline-block mb-4">
+                        HANYA UNTUK 100 ORANG PERTAMA!
                     </div>
-
-                    <!-- Main Headline -->
-                    <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight tracking-tight">
-                        Capek Bayar Mahal untuk Jasa Website? <br class="hidden md:inline">Sekarang Ada Cara Baru yang Lebih <span class="text-red-600">Cepat & Murah!</span>
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+                        Stop Bayar Mahal, Sekarang <span class="text-red-600">Siapapun Bisa</span> Punya Website Profesional!
                     </h1>
-
-                    <!-- Subheading -->
-                    <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                    <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
                         Hanya dengan Rp99.000, kuasai rahasia bikin website sendiri dari nol, tanpa ribet, dan tanpa biaya tersembunyi.
                     </p>
-
-                    <!-- CTA Button -->
                     <div class="mt-10">
-                        <a href="#harga" class="cta-gradient text-white font-bold text-lg md:text-xl py-4 px-10 rounded-xl shadow-2xl transform transition-transform duration-300 hover:scale-105 inline-block pulse-animation">
-                            👉 Amankan Kursi Anda Sekarang!
+                        <a href="#harga" class="cta-gradient text-white font-bold text-lg md:text-xl py-4 px-10 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 inline-block pulse-animation">
+                            👉 Ya, Saya Mau Amankan Slot Saya!
                         </a>
                         <p class="mt-4 text-sm text-red-500 font-semibold">Slot grup bimbingan hampir penuh!</p>
                     </div>
-
-                    <!-- Ebook Mockup Image with Glow Effect -->
                     <div class="mt-12">
-                        <img src="ebookgam.png" 
-                             alt="Mockup Ebook Revolusi Website" 
-                             class="rounded-xl shadow-2xl mx-auto max-w-full h-auto image-glow">
+                        <!-- Placeholder image for the ebook mockup -->
+                        <img src="ebookgam.png"Mockup Ebook Revolusi Website" class="rounded-lg shadow-2xl mx-auto">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- INTEREST SECTION -->
-        <section class="py-16 md:py-20 bg-gray-100">
+        <!-- PROBLEM & SOLUTION SECTION -->
+        <section class="py-16 md:py-20">
             <div class="container mx-auto px-6">
                 <div class="text-center max-w-3xl mx-auto">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Bagaimana jika Kamu Bisa Punya Website Profesional dalam Hitungan Menit?</h2>
-                    <p class="mt-4 text-gray-600">Rahasia di balik Revolusi Website adalah menggunakan **AI sebagai partner kerjamu!**</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Apakah Ini yang Anda Rasakan?</h2>
                 </div>
                 <div class="mt-12 grid md:grid-cols-3 gap-8 text-center">
-                    <!-- Problem Card 1 -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-red-500 transform transition-transform duration-300 hover:scale-105">
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
                         <h3 class="text-2xl font-bold text-red-600">MAHAL?</h3>
                         <p class="mt-4 text-gray-600">Harus keluar jutaan untuk bayar developer dan langganan hosting tahunan.</p>
                     </div>
-                    <!-- Problem Card 2 -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-red-500 transform transition-transform duration-300 hover:scale-105">
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
                         <h3 class="text-2xl font-bold text-red-600">RIBET?</h3>
                         <p class="mt-4 text-gray-600">Bingung dengan istilah coding, server, dan hal teknis lainnya yang bikin pusing.</p>
                     </div>
-                    <!-- Problem Card 3 -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-red-500 transform transition-transform duration-300 hover:scale-105">
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
                         <h3 class="text-2xl font-bold text-red-600">TAKUT GAGAL?</h3>
                         <p class="mt-4 text-gray-600">Khawatir tidak ada yang membimbing jika menemukan kesulitan di tengah jalan.</p>
                     </div>
                 </div>
-                
-                <!-- Solution Callout -->
-                <div class="mt-16 text-center max-w-4xl mx-auto bg-green-500 border-l-4 border-green-700 text-white p-8 rounded-xl shadow-xl">
-                    <p class="text-xl md:text-2xl font-semibold leading-tight">
-                        Kabar Baiknya, Ebook Revolusi Website adalah jalan pintas Anda. <br class="hidden md:inline"> Kami bongkar semua rahasia yang tidak akan Anda temukan di tempat lain.
+                <div class="mt-12 text-center max-w-3xl mx-auto bg-green-100 border-l-4 border-green-500 text-green-700 p-6 rounded-r-lg">
+                    <p class="text-xl font-semibold">
+                        Kabar Baiknya, Ebook Revolusi Website adalah jalan pintas Anda. Kami bongkar semua rahasia yang tidak akan Anda temukan di tempat lain.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- DESIRE SECTION -->
+        <!-- FEATURES & BENEFITS SECTION -->
         <section class="py-16 md:py-20 bg-white">
             <div class="container mx-auto px-6">
-                <div class="text-center max-w-4xl mx-auto">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Bayangkan...</h2>
-                    <p class="mt-4 text-lg md:text-xl text-gray-600">Hanya dengan Rp99.000, kamu bisa menguasai teknik membuat website dari nol, dengan AI sebagai partner kerjamu. Cukup berikan instruksi, dan AI akan merancang dan membangun websitemu secara otomatis. Ini bukan cuma kursus, ini adalah skill masa depan yang akan menghemat waktu dan uangmu. Kamu bisa punya website profesional untuk bisnismu, portofolio, atau blog impianmu.</p>
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Ini Bukan Sekadar Ebook, Ini Adalah Investasi Skill Paling Menguntungkan!</h2>
                 </div>
-                <div class="mt-12 max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
+                <div class="mt-12 max-w-4xl mx-auto space-y-8">
                     <!-- Feature Items -->
-                    <div class="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl shadow-lg">
-                        <div class="flex-shrink-0 bg-green-500 text-white rounded-full h-10 w-10 flex items-center justify-center font-bold text-xl">✓</div>
-                        <div>
-                            <h4 class="text-xl font-bold">Panduan Dari Nol Jadi Mahir</h4>
-                            <p class="mt-1 text-gray-600">Belajar langkah demi langkah membuat website, bahkan jika Anda awam. Disusun dengan bahasa yang mudah dimengerti dan penuh gambar.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl shadow-lg">
-                        <div class="flex-shrink-0 bg-green-500 text-white rounded-full h-10 w-10 flex items-center justify-center font-bold text-xl">✓</div>
-                        <div>
-                            <h4 class="text-xl font-bold">Revolusi Biaya Website</h4>
-                            <p class="mt-1 text-gray-600">Temukan cara cerdas membuat website <span class="font-bold">tanpa perlu membayar hosting bulanan/tahunan yang mahal.</span> Rahasia yang jarang diungkap!</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl shadow-lg">
-                        <div class="flex-shrink-0 bg-green-500 text-white rounded-full h-10 w-10 flex items-center justify-center font-bold text-xl">✓</div>
-                        <div>
-                            <h4 class="text-xl font-bold">Domain Super Murah</h4>
-                            <p class="mt-1 text-gray-600">Kami tunjukkan trik mendapatkan domain profesional hanya dengan modal <span class="font-bold">Rp16.000</span> saja. Website Anda akan terlihat kredibel.</p>
-                        </div>
-                    </div>
+                    <div class="flex items-start space-x-4"><div class="flex-shrink-0 bg-green-500 text-white rounded-full h-8 w-8 flex items-center justify-center font-bold">✓</div><div><h4 class="text-xl font-bold">Panduan Dari Nol Jadi Mahir</h4><p class="mt-1 text-gray-600">Belajar langkah demi langkah membuat website, bahkan jika Anda awam. Disusun dengan bahasa yang mudah dimengerti dan penuh gambar.</p></div></div>
+                    <div class="flex items-start space-x-4"><div class="flex-shrink-0 bg-green-500 text-white rounded-full h-8 w-8 flex items-center justify-center font-bold">✓</div><div><h4 class="text-xl font-bold">Revolusi Biaya Website</h4><p class="mt-1 text-gray-600">Temukan cara cerdas membuat website <span class="font-bold">tanpa perlu membayar hosting bulanan/tahunan yang mahal.</span> Rahasia yang jarang diungkap!</p></div></div>
+                    <div class="flex items-start space-x-4"><div class="flex-shrink-0 bg-green-500 text-white rounded-full h-8 w-8 flex items-center justify-center font-bold">✓</div><div><h4 class="text-xl font-bold">Domain Super Murah</h4><p class="mt-1 text-gray-600">Kami tunjukkan trik mendapatkan domain profesional hanya dengan modal <span class="font-bold">Rp16.000</span> saja. Website Anda akan terlihat kredibel.</p></div></div>
 
                     <!-- Exclusive Bonus -->
-                    <div class="flex items-start space-x-4 p-6 bg-yellow-50 border-l-4 border-yellow-500 rounded-xl shadow-xl ring-4 ring-yellow-200">
-                        <div class="flex-shrink-0 bg-yellow-500 text-white rounded-full h-10 w-10 flex items-center justify-center font-bold text-xl">⭐</div>
+                    <div class="flex items-start space-x-4 p-6 bg-yellow-100 border-l-4 border-yellow-400 rounded-r-lg ring-4 ring-yellow-300 ring-opacity-50">
+                        <div class="flex-shrink-0 bg-yellow-400 text-white rounded-full h-8 w-8 flex items-center justify-center font-bold">⭐</div>
                         <div>
-                            <h4 class="text-xl font-bold text-yellow-800">BONUS EKSKLUSIF (Bernilai Rp 500.000)</h4>
+                            <h4 class="text-xl font-bold">BONUS EKSKLUSIF (Bernilai Rp 500.000)</h4>
                             <p class="mt-1 text-gray-700">Masuk ke dalam <span class="font-bold">grup WhatsApp VVIP</span> bersama penulis dan member lainnya. Ini bukan grup biasa, ini adalah akses langsung untuk bertanya dan dapat bimbingan kapanpun Anda butuh. <span class="font-bold text-red-600">Slot sangat terbatas demi menjaga kualitas!</span></p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- OFFER & URGENCY SECTION (Action) -->
-        <section id="harga" class="py-16 md:py-24 bg-gray-900 text-white">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold">Jangan Tunda Lagi! Ambil Kesempatan Ini Sekarang Juga!</h2>
-                <div class="my-8">
-                    <p class="text-2xl text-gray-400 line-through">Harga Normal: Rp299.000</p>
-                    <p class="text-5xl md:text-7xl font-extrabold text-yellow-400 mt-2">HARI INI CUMA Rp99.000</p>
-                </div>
-                
-                <!-- Countdown Timer -->
-                <div class="mt-8 max-w-md mx-auto bg-red-600 p-6 rounded-xl shadow-2xl">
-                    <h4 class="text-lg font-semibold text-white">HARGA PROMO BERAKHIR DALAM:</h4>
-                    <div id="countdown" class="text-4xl font-bold text-white mt-4 flex justify-center space-x-4">
-                        <div class="flex flex-col items-center"><span id="hours">00</span><p class="text-sm font-normal">Jam</p></div>
-                        <div class="flex flex-col items-center">:</div>
-                        <div class="flex flex-col items-center"><span id="minutes">00</span><p class="text-sm font-normal">Menit</p></div>
-                        <div class="flex flex-col items-center">:</div>
-                        <div class="flex flex-col items-center"><span id="seconds">00</span><p class="text-sm font-normal">Detik</p></div>
-                    </div>
-                </div>
-
-                <!-- Slot Counter -->
-                <div class="mt-8 bg-white text-gray-900 max-w-sm mx-auto p-6 rounded-xl shadow-xl transform scale-105">
-                    <p class="text-xl font-bold text-red-600">PERHATIAN: SLOT GRUP BIMBINGAN TERSISA</p>
-                    <p class="text-4xl font-extrabold mt-1"><span id="slots">17</span> ORANG LAGI!</p>
-                </div>
-                
-                <!-- Final CTA -->
-                <div class="mt-10">
-                    <a href="https://lynk.id/satriamuda/xe15dz66m94p" class="cta-gradient text-white font-bold text-lg md:text-xl py-4 px-10 rounded-xl shadow-2xl transform transition-transform duration-300 hover:scale-105 inline-block pulse-animation">
-                        🚀 Ya, Saya Mau Amankan Kursi Saya!
-                    </a>
-                    <p class="mt-3 text-yellow-300">Amankan posisimu sebelum harga kembali normal!</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- TESTIMONIALS SECTION -->
-        <section class="py-16 md:py-20 bg-gray-100">
-            <div class="container mx-auto px-6">
-                <div class="text-center max-w-3xl mx-auto">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Apa Kata Mereka?</h2>
-                    <p class="mt-4 text-gray-600">Lihat apa yang orang lain rasakan setelah mengikuti panduan kami.</p>
-                </div>
-                <div class="mt-12 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    <!-- Testimonial 1 -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-red-500">
-                        <p class="text-gray-600 italic leading-relaxed">"Gila, semudah ini ternyata bikin website. Gak perlu lagi bayar mahal ke orang. Ebooknya jelas banget, plus bisa nanya-nanya di grup itu ngebantu banget!"</p>
-                        <p class="mt-4 font-bold text-gray-900">- Budi, Pengusaha Kuliner</p>
-                    </div>
-                    <!-- Testimonial 2 -->
-                    <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-red-500">
-                        <p class="text-gray-600 italic leading-relaxed">"Awalnya ragu, masa sih 16 ribu bisa punya domain. Ternyata beneran bisa! Ilmunya daging semua. Terima kasih banyak!"</p>
-                        <p class="mt-4 font-bold text-gray-900">- Ani, Freelancer</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- WHY YOU NEED A WEBSITE SECTION -->
-        <section class="py-16 md:py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="text-center max-w-3xl mx-auto">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Kenapa Wajib Punya Website di Era Digital?</h2>
-                </div>
-                <div class="mt-12 grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
-                    <div class="text-center">
-                        <img src="https://placehold.co/400x300/F97316/ffffff?text=Eksistensi+Digital" alt="Ilustrasi eksistensi digital" class="rounded-xl shadow-lg mx-auto">
-                        <h3 class="mt-4 text-2xl font-bold">Bangun Eksistensi Online</h3>
-                        <p class="mt-2 text-gray-600">Website adalah rumah digital Anda. Jadikan bisnis atau portofolio Anda mudah ditemukan 24/7 di seluruh dunia.</p>
-                    </div>
-                    <div class="text-center">
-                        <img src="https://placehold.co/400x300/EF4444/ffffff?text=Profesionalisme" alt="Ilustrasi profesionalisme" class="rounded-xl shadow-lg mx-auto">
-                        <h3 class="mt-4 text-2xl font-bold">Tingkatkan Profesionalisme</h3>
-                        <p class="mt-2 text-gray-600">Dengan website profesional, Anda akan terlihat lebih kredibel dan dapat membangun kepercayaan pelanggan.</p>
-                    </div>
-                    <div class="text-center">
-                        <img src="https://placehold.co/400x300/10B981/ffffff?text=Otomatisasi" alt="Ilustrasi otomatisasi bisnis" class="rounded-xl shadow-lg mx-auto">
-                        <h3 class="mt-4 text-2xl font-bold">Otomatiskan Bisnis</h3>
-                        <p class="mt-2 text-gray-600">Fungsikan website Anda sebagai mesin otomatis untuk menghasilkan leads, menjual produk, atau mengumpulkan data tanpa henti.</p>
-                    </div>
-                    <div class="text-center">
-                        <img src="https://placehold.co/400x300/3B82F6/ffffff?text=Kontrol+Penuh" alt="Ilustrasi kontrol penuh" class="rounded-xl shadow-lg mx-auto">
-                        <h3 class="mt-4 text-2xl font-bold">Kontrol Penuh di Tangan Anda</h3>
-                        <p class="mt-2 text-gray-600">Berbeda dengan media sosial, Anda memiliki kendali penuh atas konten, data, dan desain website Anda.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- WHAT YOU WILL GET SECTION -->
-        <section class="py-16 md:py-20 bg-gray-100">
-            <div class="container mx-auto px-6">
-                <div class="text-center max-w-4xl mx-auto">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Apa Saja yang Akan Anda Dapatkan?</h2>
-                    <p class="mt-4 text-gray-600">Semua yang Anda butuhkan untuk menjadi ahli dalam membuat website ada di sini!</p>
-                </div>
-                <div class="mt-12 max-w-5xl mx-auto space-y-8">
-                    <!-- What You Get Items -->
-                    <div class="flex items-start space-x-4 p-6 bg-white rounded-xl shadow-lg">
-                        <div class="flex-shrink-0 bg-green-500 text-white rounded-full h-10 w-10 flex items-center justify-center font-bold text-xl">1</div>
-                        <div>
-                            <h4 class="text-xl font-bold">Ebook Panduan Revolusi Website (PDF)</h4>
-                            <p class="mt-1 text-gray-600">Panduan langkah demi langkah yang detail, dari nol hingga website profesional siap online. Dilengkapi ilustrasi dan bahasa yang mudah dipahami pemula.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4 p-6 bg-white rounded-xl shadow-lg">
-                        <div class="flex-shrink-0 bg-green-500 text-white rounded-full h-10 w-10 flex items-center justify-center font-bold text-xl">2</div>
-                        <div>
-                            <h4 class="text-xl font-bold">Akses Grup Bimbingan VVIP</h4>
-                            <p class="mt-1 text-gray-600">Akses langsung ke grup WhatsApp eksklusif untuk bertanya, berdiskusi, dan mendapatkan dukungan dari penulis serta komunitas.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4 p-6 bg-white rounded-xl shadow-lg">
-                        <div class="flex-shrink-0 bg-green-500 text-white rounded-full h-10 w-10 flex items-center justify-center font-bold text-xl">3</div>
-                        <div>
-                            <h4 class="text-xl font-bold">Template & Resources Eksklusif</h4>
-                            <p class="mt-1 text-gray-600">Dapatkan koleksi template website, tools, dan resources gratis yang bisa Anda gunakan untuk mempercepat proses pembuatan website Anda.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- WHO IS THIS FOR SECTION -->
-        <section class="py-16 md:py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="text-center max-w-3xl mx-auto">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Siapa yang Cocok dengan Panduan Ini?</h2>
-                    <p class="mt-4 text-gray-600">Panduan ini sangat cocok untuk Anda yang...</p>
-                </div>
-                <div class="mt-12 max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
-                    <div class="bg-gray-100 p-6 rounded-xl shadow-lg border-b-4 border-blue-500">
-                        <h4 class="text-xl font-bold">Pemula Tanpa Skill Coding</h4>
-                        <p class="mt-2 text-gray-600">Anda yang tidak punya background IT dan ingin belajar membuat website dari nol.</p>
-                    </div>
-                    <div class="bg-gray-100 p-6 rounded-xl shadow-lg border-b-4 border-blue-500">
-                        <h4 class="text-xl font-bold">Pebisnis & UMKM</h4>
-                        <p class="mt-2 text-gray-600">Anda yang ingin punya website untuk bisnis tanpa perlu mengeluarkan biaya mahal.</p>
-                    </div>
-                    <div class="bg-gray-100 p-6 rounded-xl shadow-lg border-b-4 border-blue-500">
-                        <h4 class="text-xl font-bold">Content Creator</h4>
-                        <p class="mt-2 text-gray-600">Anda yang ingin membangun portofolio online atau blog pribadi untuk branding.</p>
                     </div>
                 </div>
             </div>
@@ -322,36 +128,116 @@
         <!-- OFFER & URGENCY SECTION -->
         <section id="harga" class="py-16 md:py-24 bg-gray-900 text-white">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold">Jangan Tunda Lagi! Ambil Kesempatan Ini Sekarang Juga!</h2>
+                <h2 class="text-3xl md:text-4xl font-bold">Jangan Lewatkan Kesempatan Langka Ini!</h2>
                 <div class="my-8">
                     <p class="text-2xl text-gray-400 line-through">Harga Normal: Rp299.000</p>
                     <p class="text-5xl md:text-7xl font-extrabold text-yellow-400 mt-2">HARI INI CUMA Rp99.000</p>
                 </div>
                 
                 <!-- Countdown Timer -->
-                <div class="mt-8 max-w-md mx-auto bg-red-600 p-6 rounded-xl shadow-2xl">
+                <div class="mt-8 max-w-md mx-auto bg-red-600 p-4 rounded-lg shadow-lg">
                     <h4 class="text-lg font-semibold text-white">HARGA PROMO BERAKHIR DALAM:</h4>
-                    <div id="countdown" class="text-4xl font-bold text-white mt-4 flex justify-center space-x-4">
-                        <div class="flex flex-col items-center"><span id="hours">00</span><p class="text-sm font-normal">Jam</p></div>
-                        <div class="flex flex-col items-center">:</div>
-                        <div class="flex flex-col items-center"><span id="minutes">00</span><p class="text-sm font-normal">Menit</p></div>
-                        <div class="flex flex-col items-center">:</div>
-                        <div class="flex flex-col items-center"><span id="seconds">00</span><p class="text-sm font-normal">Detik</p></div>
+                    <div id="countdown" class="text-4xl font-bold text-white mt-2 flex justify-center space-x-4">
+                        <div><span id="hours">00</span><p class="text-sm font-normal">Jam</p></div>
+                        <div>:</div>
+                        <div><span id="minutes">00</span><p class="text-sm font-normal">Menit</p></div>
+                        <div>:</div>
+                        <div><span id="seconds">00</span><p class="text-sm font-normal">Detik</p></div>
                     </div>
                 </div>
 
-                <!-- Slot Counter -->
-                <div class="mt-8 bg-white text-gray-900 max-w-sm mx-auto p-6 rounded-xl shadow-xl transform scale-105">
+                <div class="mt-8 bg-white text-gray-900 max-w-sm mx-auto p-4 rounded-lg">
                     <p class="text-xl font-bold text-red-600">PERHATIAN: SLOT GRUP BIMBINGAN TERSISA</p>
                     <p class="text-4xl font-extrabold mt-1"><span id="slots">17</span> ORANG LAGI!</p>
                 </div>
                 
-                <!-- Final CTA -->
                 <div class="mt-10">
-                    <a href="https://lynk.id/satriamuda/xe15dz66m94p" class="cta-gradient text-white font-bold text-lg md:text-xl py-4 px-10 rounded-xl shadow-2xl transform transition-transform duration-300 hover:scale-105 inline-block pulse-animation">
-                        🚀 Ya, Saya Mau Amankan Kursi Saya!
+                    <a href="https://lynk.id/satriamuda/xe15dz66m94p" class="cta-gradient text-white font-bold text-lg md:text-xl py-4 px-10 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 inline-block pulse-animation">
+                        🚀 Ya, Saya Tidak Mau Ketinggalan!
                     </a>
                     <p class="mt-3 text-yellow-300">Amankan posisimu sebelum harga kembali normal!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SECTION - UPDATED -->
+        <section class="py-16 md:py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Apa Kata Mereka Setelah Bergabung?</h2>
+                </div>
+                <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+                    <!-- Testimonial 1 -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="1.png" alt="Testimoni WhatsApp dari Budi" class="rounded-lg shadow-md border-2 border-gray-200 w-full">
+                        <div class="mt-4">
+                            <p class="text-lg font-bold text-gray-900">- Agus, Agent Property</p>
+                            <p class="text-sm text-gray-500">Member Revolusi Website</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="2.png" alt="Testimoni WhatsApp dari Ani" class="rounded-lg shadow-md border-2 border-gray-200 w-full">
+                        <div class="mt-4">
+                            <p class="text-lg font-bold text-gray-900">- Pak Kosim, Service Teknisi Ac</p>
+                            <p class="text-sm text-gray-500">Member Revolusi Website</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="3.png" alt="Testimoni WhatsApp dari Siti" class="rounded-lg shadow-md border-2 border-gray-200 w-full">
+                        <div class="mt-4">
+                            <p class="text-lg font-bold text-gray-900">- Aldi, Mahasiswa</p>
+                            <p class="text-sm text-gray-500">Member Revolusi Website</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="4.png" alt="Testimoni WhatsApp dari Hadi" class="rounded-lg shadow-md border-2 border-gray-200 w-full">
+                        <div class="mt-4">
+                            <p class="text-lg font-bold text-gray-900">- Fajar, Remot Jobseeker</p>
+                            <p class="text-sm text-gray-500">Member Revolusi Website</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 5 -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="5.png" alt="Testimoni WhatsApp dari Rini" class="rounded-lg shadow-md border-2 border-gray-200 w-full">
+                        <div class="mt-4">
+                            <p class="text-lg font-bold text-gray-900">- Maya, Ibu Rumah Tangga</p>
+                            <p class="text-sm text-gray-500">Member Revolusi Website</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 6 -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="6.png" alt="Testimoni WhatsApp dari Dedy" class="rounded-lg shadow-md border-2 border-gray-200 w-full">
+                        <div class="mt-4">
+                            <p class="text-lg font-bold text-gray-900">- Winda, Design Freelancer</p>
+                            <p class="text-sm text-gray-500">Member Revolusi Website</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 7 -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="7.png" alt="Testimoni WhatsApp dari Lisa" class="rounded-lg shadow-md border-2 border-gray-200 w-full">
+                        <div class="mt-4">
+                            <p class="text-lg font-bold text-gray-900">- Deni, UMKM </p>
+                            <p class="text-sm text-gray-500">Member Revolusi Website</p>
+                        </div>
+                    </div>
+
+                      <!-- Testimonial 8 -->
+                    <div class="flex flex-col items-center text-center">
+                        <img src="8.png" alt="Testimoni WhatsApp dari Lisa" class="rounded-lg shadow-md border-2 border-gray-200 w-full">
+                        <div class="mt-4">
+                            <p class="text-lg font-bold text-gray-900">- Nia Glow Skincare, Skincare </p>
+                            <p class="text-sm text-gray-500">Member Revolusi Website</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -359,7 +245,7 @@
         <!-- GUARANTEE SECTION -->
         <section class="py-16 bg-white">
             <div class="container mx-auto px-6">
-                <div class="max-w-3xl mx-auto bg-blue-50 border-2 border-blue-200 rounded-xl p-8 flex flex-col md:flex-row items-center text-center md:text-left shadow-lg">
+                <div class="max-w-3xl mx-auto bg-blue-50 border-2 border-blue-200 rounded-lg p-8 flex flex-col md:flex-row items-center text-center md:text-left">
                     <div class="flex-shrink-0 mb-6 md:mb-0 md:mr-8">
                         <svg class="h-24 w-24 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -373,41 +259,15 @@
             </div>
         </section>
 
-        <!-- FAQ SECTION -->
-        <section class="py-16 md:py-20 bg-gray-100">
-            <div class="container mx-auto px-6">
-                <div class="text-center max-w-3xl mx-auto">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Pertanyaan Yang Sering Diajukan (FAQ)</h2>
-                </div>
-                <div class="mt-12 max-w-4xl mx-auto space-y-6">
-                    <!-- FAQ Item 1 -->
-                    <div class="bg-white p-6 rounded-xl shadow-md">
-                        <h4 class="text-xl font-bold">Apakah ini cocok untuk pemula yang belum pernah coding?</h4>
-                        <p class="mt-2 text-gray-600">Ya, panduan ini 100% cocok untuk pemula. Kami menyusunnya dari nol, dengan bahasa yang sederhana, step-by-step, dan penuh gambar agar mudah dipahami.</p>
-                    </div>
-                    <!-- FAQ Item 2 -->
-                    <div class="bg-white p-6 rounded-xl shadow-md">
-                        <h4 class="text-xl font-bold">Apakah ada biaya tambahan selain harga ebook?</h4>
-                        <p class="mt-2 text-gray-600">Tidak ada biaya tersembunyi. Kami ajarkan cara membuat website tanpa perlu bayar hosting mahal. Anda hanya perlu bayar domain, dan kami tunjukkan cara mendapatkannya dengan harga super murah.</p>
-                    </div>
-                    <!-- FAQ Item 3 -->
-                    <div class="bg-white p-6 rounded-xl shadow-md">
-                        <h4 class="text-xl font-bold">Bagaimana cara mendapatkan bimbingan di grup?</h4>
-                        <p class="mt-2 text-gray-600">Setelah membeli ebook, Anda akan otomatis mendapatkan link untuk masuk ke grup WhatsApp VVIP. Di sana, Anda bisa bertanya langsung kepada penulis dan tim kapan saja.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- FINAL CTA SECTION -->
-        <section class="py-16 md:py-24 bg-gray-900 text-white">
+        <section class="py-16 md:py-24 bg-gray-800 text-white">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold">Keputusan Ada di Tangan Anda Sekarang!</h2>
                 <p class="mt-4 text-lg text-gray-300">Anda bisa terus menunda dan membiarkan kesempatan ini lewat, atau ambil tindakan sekarang dan ubah nasib digital Anda selamanya.</p>
                 <p class="text-5xl md:text-6xl font-extrabold text-yellow-400 mt-6">Cuma Rp99.000</p>
                  <p class="mt-4 text-xl text-red-500 font-semibold">Besok, Harga Akan Kembali Normal Menjadi Rp299.000!</p>
                 <div class="mt-10">
-                    <a href="https://lynk.id/satriamuda/xe15dz66m94p" class="cta-gradient text-white font-bold text-lg md:text-xl py-5 px-12 rounded-xl shadow-2xl transform transition-transform duration-300 hover:scale-105 inline-block pulse-animation">
+                    <a href="https://lynk.id/satriamuda/xe15dz66m94p" class="cta-gradient text-white font-bold text-lg md:text-xl py-5 px-12 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 inline-block pulse-animation">
                         👇 SAYA AMBIL KESEMPATAN INI SEKARANG!
                     </a>
                 </div>
@@ -462,16 +322,16 @@
             const slotElement = document.getElementById('slots');
             
             function updateSlots() {
-                // Ensure slots don't go below 5
                 if (slotsLeft > 5) {
                     slotsLeft--;
                     slotElement.innerText = slotsLeft;
                 }
             }
 
-            // Decrease slot count randomly every 4-8 seconds to simulate purchases
+            // Decrease slot count randomly every few seconds to simulate purchases
             setInterval(updateSlots, Math.random() * (8000 - 4000) + 4000);
         })();
     </script>
+
 </body>
 </html>
